@@ -1,16 +1,32 @@
 #include "point.hpp"
 #include "vector.hpp"
 
+typedef enum {
+    POINT,
+    COLINEAR_INTERSECTING,
+    COLINEAR_NON_INTERSECTING,
+    PARALLEL_NON_INTERSECTING,
+    NON_INTERSECTING
+} IntersectionStatus;
+
+
 #if !defined(DEF_SEGMENT)
 #define DEF_SEGMENT
 
 class Segment
 {
 private:
-    /* data */
+    Point origin;
+    Vector direction;
 public:
-    Segment(/* args */);
+    Segment(Point origin, Vector direction);
     ~Segment();
+    float length() const;
+    Point setOrigin(Point point);
+    Point getOrigin() const;
+    Vector setDirection(Vector vector);
+    Vector getDirection() const;
+    IntersectionStatus intersect(Segment segment, Point point) const;
 };
 
 

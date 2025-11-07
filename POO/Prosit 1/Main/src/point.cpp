@@ -25,8 +25,8 @@ float Point::print() const{
 Vector Point::minus(Point point) const{
     Vector tmpVector;
 
-    tmpVector.x = this->x - point.x;
-    tmpVector.y = this->y - point.y;
+    tmpVector.setX(this->x - point.x);
+    tmpVector.setY(this->y - point.y);
     
     return tmpVector;
 }

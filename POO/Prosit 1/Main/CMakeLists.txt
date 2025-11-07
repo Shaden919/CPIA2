@@ -10,7 +10,7 @@ include_directories(include)
 # Liste des fichiers sources
 set(SOURCES
     src/main.cpp
-    src/lib.cpp
+    src/point.cpp
 )
 
 # Création de l'exécutable

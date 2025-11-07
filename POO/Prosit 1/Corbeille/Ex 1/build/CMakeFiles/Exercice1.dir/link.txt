@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/Exercice1.dir/main.cpp.o CMakeFiles/Exercice1.dir/ListData.cpp.o -o Exercice1 

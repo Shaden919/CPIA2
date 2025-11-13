@@ -8,16 +8,16 @@ using namespace std;
 class File
 {
 private:
-    std::string name;
-    std::string path;
+    string name;
+    string path;
 public:
-    File(const std::string& name,const std::string& path);
+    File(const string& name,const string& path);
     ~File();
     void setName(string name);
     void setPath(string path);
     string getName();
     string getPath();
-    std::string read() const;
+    string read() const;
     void write(string ligne) const;
 };
 

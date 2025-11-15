@@ -22,6 +22,31 @@ string File::getPath() {
     return this->path;
 }
 
-string File::readBin() const {}
-void File::writeBin() const {}
+string File::read() const{
+    ifstream file(this->path.c_str(), ios::in);
+    if(file.fail()) {
+        cerr << "Erreur d'ouverture du fichier \"" << this->name << "\"\n";
+        return "";
+    }
 
+    string output;
+    string ligne;
+
+    while (getline(file,ligne)) output += ligne + "\n";
+    
+    cout << output << endl;
+    return output;  
+    
+}
+
+void File::write(string ligne) const{
+    
+    ofstream file(this->path.c_str(),ios::out);
+    if(file.fail()) {
+        cerr << "Erreur d'ouverture du fichier \"" << this->name << "\"\n";
+        return;
+    }
+
+    file << ligne << endl;
+    file.close();
+}

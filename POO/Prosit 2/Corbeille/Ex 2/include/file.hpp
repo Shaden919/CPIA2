@@ -17,9 +17,8 @@ public:
     void setPath(string path);
     string getName();
     string getPath();
-    string readBin() const;
-    void writeBin() const;
-    
+    string read() const;
+    void write(string ligne) const;
 };
 
 

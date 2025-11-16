@@ -50,3 +50,29 @@ void File::write(string ligne) const{
     file << ligne << endl;
     file.close();
 }
+
+string File::readBin() const {
+    ifstream file(this->path.c_str(), ios::binary);
+    string output;
+    char c;
+    while (file) {
+        char byte = 0;
+        for (int i = 0; i < 8; i++) {
+            if (!file.get(c)) break;
+            byte = (byte << 1) | (c - '0');
+        }
+        output += byte;
+    }
+    cout << output << "\n";
+    return output;
+}
+
+void File::writeBin(string message) const {
+    std::ofstream file(this->path, std::ios::binary | ios::ate);
+    for (char c : message) {
+        for (int i = 7; i >= 0; i--) {
+            char bit = ((c >> i) & 1) ? '1' : '0';
+            file.put(bit);
+        }
+    }
+}

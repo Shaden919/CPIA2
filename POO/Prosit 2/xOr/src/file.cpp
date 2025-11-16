@@ -52,17 +52,6 @@ void File::write(string ligne) const{
     file.close();
 }
 
-bool File::del() {
-    if (remove(this->path.c_str()) == 0)
-    {
-        cout << "fichier supprimer\n";
-        this->name = "";
-        this->path = "";
-        return 0;
-    }
-    cout << "fichier inexistant";
-    return 1;
-}
 
 bool File::rename(string name) {
     File newFile(name,name + ".txt");
@@ -73,6 +62,6 @@ bool File::rename(string name) {
     }
     string ligne;
     while (getline(file,ligne))newFile.write(ligne);
-    this->del();
+    remove(this->getPath().c_str());
     return 0;
 }

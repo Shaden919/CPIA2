@@ -20,7 +20,6 @@ public:
     string read() const;
     void write(string ligne) const;
     bool rename(string name);
-    bool del();
 };
 
 

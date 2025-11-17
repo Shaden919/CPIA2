@@ -3,10 +3,9 @@
 #include <iostream>
 #include <string>
 
-class Personnage {  
+class Personnage {      
     public:    
-    Personnage();
-    Personnage(std::string nom) : m_vie(100), m_nom(nom){}    
+    Personnage(int vie = 100,std::string nom = "jack") : m_vie(100), m_nom(nom){}    
     void recevoirDegats(int degats);    
     void coupDePoing(Personnage &cible) const;  
     void sePresenter() const;

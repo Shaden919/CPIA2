@@ -11,6 +11,8 @@ include_directories(include)
 set(SOURCES
     src/main.cpp
     src/vehicule.cpp
+    src/bus.cpp
+    src/schoolBus.cpp
 )
 
 # Création de l'exécutable

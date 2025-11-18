@@ -13,6 +13,8 @@ public:
     void setSeat_capacity(int seat_capacity);
     int getSeat_capacity() const;
     void getInfo() const;
+
+    static int countBigBus(Bus list[],int taille);
 };
 
 

@@ -13,6 +13,7 @@ set(SOURCES
     src/objet.cpp
     src/carre.cpp
     src/rectangle.cpp
+    src/gestionObjet.cpp
 )
 
 # Création de l'exécutable

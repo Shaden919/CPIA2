@@ -13,6 +13,8 @@ set(SOURCES
     src/point.cpp
     src/vector.cpp
     src/segment.cpp
+    src/polygone.cpp
+    src/cercle.cpp
 )
 
 # Création de l'exécutable

@@ -4,6 +4,7 @@
 #include "polygone.hpp"
 #include "cerlce.hpp"
 #include "rectangle.hpp"
+#include "carre.hpp"
 #include <cstdlib>
 #include <iostream>
 
@@ -19,6 +20,9 @@ int main() {
   Vector largeur(0.,10.);
   Rectangle rectangle(&p2,longueur,largeur);
   rectangle.afficheInfo();
-  p2 = p2.add(vector);
+  p2 = p2.add(vector.negate());
   rectangle.afficheInfo();
+  
+  Carre carre(&p2,vector);
+  carre.afficheInfo();
 }

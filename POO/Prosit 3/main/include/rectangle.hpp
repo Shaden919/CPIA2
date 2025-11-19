@@ -5,7 +5,7 @@
 
 class Rectangle : public Polygone
 {
-private:
+protected:
     Vector longueur,largeur;
 public:
     Rectangle(Point* origine,Vector longueur,Vector largeur);

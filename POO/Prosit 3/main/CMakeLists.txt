@@ -16,6 +16,7 @@ set(SOURCES
     src/polygone.cpp
     src/cercle.cpp
     src/rectangle.cpp
+    src/carre.cpp
 )
 
 # Création de l'exécutable

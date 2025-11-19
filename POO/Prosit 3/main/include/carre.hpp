@@ -1,19 +1,15 @@
 #if !defined(DEF_CARRE)
 #define DEF_CARRE
 
-#include "polygone.hpp"
+#include "rectangle.hpp"
 
-class Carre : public Polygone
+class Carre : public Rectangle
 {
 private:
-    double cote;
-    Point* fin;
 public:
-    Carre(Point* origine,Point* fin);
+    Carre(Point* origine,Vector cote);
     ~Carre();
-    double aire()  const override;
-    double perimeter() const override;
-    void afficheInfo() const override;
+    void afficheInfo() const;
 };
 
 #endif // DEF_CARRE

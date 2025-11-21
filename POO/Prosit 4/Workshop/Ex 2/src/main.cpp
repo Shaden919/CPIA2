@@ -7,7 +7,7 @@ using namespace std;
 int main() {
     Instrument* I;
     int i = 0;
-    while (i = 0)
+    while (i == 0)
     {
         cout << "quel instrument jouer ? Saxophone(1)/Piano(2)\n";
         cin >> i;
@@ -22,6 +22,6 @@ int main() {
         break;
     }
     I->jouer();
-
+    delete I;
     return 0;
 }

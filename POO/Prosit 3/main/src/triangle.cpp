@@ -9,6 +9,18 @@ Triangle::~Triangle() {}
 double Triangle::aire() const {
     return aileDroite.getX() * aileGauche.getY() - aileDroite.getY() * aileGauche.getX() / 2;
 }
+void Triangle::setAileDroite(Vector aileDrtoie) {
+    this->aileDroite = aileDroite;
+}
+void Triangle::setAileGauche(Vector aileGauche) {
+    this->aileGauche = aileGauche;
+}
+Vector Triangle::getAileDroite() const {
+    return this->aileDroite;
+}
+Vector Triangle::getAilegauche() const {
+    this->aileGauche;
+}
 double Triangle::perimeter() const {
     Point p1 = origine->add(aileDroite);
     Point p2 = origine->add(aileGauche);

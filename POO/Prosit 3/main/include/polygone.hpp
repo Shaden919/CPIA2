@@ -1,5 +1,5 @@
-#if !defined(DEF_POLUYGONE)
-#define DEF_POLUYGONE
+#if !defined(DEF_POLYGONE)
+#define DEF_POLYGONE
 
 #include "point.hpp"
 
@@ -17,4 +17,4 @@ public:
 };
 
 
-#endif // DEF_POLUYGONE
+#endif // DEF_POLYGONE

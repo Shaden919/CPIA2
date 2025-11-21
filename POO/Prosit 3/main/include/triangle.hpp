@@ -10,6 +10,10 @@ private:
 public:
     Triangle(Point* origine,Vector aileDroite,Vector aileGauche);
     ~Triangle();
+    void setAileDroite(Vector aileDrtoie);
+    void setAileGauche(Vector aileGauche);
+    Vector getAileDroite() const;
+    Vector getAilegauche() const;
     double aire() const;
     double perimeter() const;
     void afficheInfo() const;

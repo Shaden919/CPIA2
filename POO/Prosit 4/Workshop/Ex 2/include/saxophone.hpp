@@ -3,11 +3,11 @@
 
 #include "instrument.hpp"
 
-class Saxosphone : public Instrument
+class Saxophone : public Instrument
 {
 public:
-    Saxosphone(/* args */);
-    ~Saxosphone();
+    Saxophone();
+    ~Saxophone();
     void jouer() override;
 };
 

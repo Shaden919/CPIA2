@@ -10,6 +10,9 @@ include_directories("Ex 2" public include)
 # Liste des fichiers sources
 set(SOURCES
     src/main.cpp
+    src/instrument.cpp
+    src/piano.cpp
+    src/saxophone.cpp
 )
 
 # Création de l'exécutable

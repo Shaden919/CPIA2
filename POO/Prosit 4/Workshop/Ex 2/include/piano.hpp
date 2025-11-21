@@ -5,11 +5,10 @@
 
 class Piano : public Instrument
 {
-private:
-    /* data */
 public:
-    Piano(/* args */);
+    Piano();
     ~Piano();
+    void jouer() override;
 };
 
 

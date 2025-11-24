@@ -10,8 +10,8 @@ private:
 public:
     CLpoint3D(float x = 0.,float y = 0., float z = 0.);
     ~CLpoint3D();
-    void setZ(float z) override;
-    float getZ() const override;
+    void setZ(float z) ;
+    float getZ() const ;
     void afficherCoordo() const override;
 };
 

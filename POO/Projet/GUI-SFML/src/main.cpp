@@ -10,6 +10,7 @@ const int gridHeight = 80;
 std::vector<std::vector<int>> grid(gridWidth, std::vector<int>(gridHeight));
 std::vector<std::vector<int>> nextGrid(gridWidth,std::vector<int> (gridHeight));
 
+
 void initializeGrid() {
     std::srand(std::time(0));
     for (int x = 0; x < gridWidth; ++x) {
@@ -109,12 +110,16 @@ int main() {
                 case sf::Keyboard::Space :
                     pause = !pause;
                     break;
+                case sf::Mouse::Left :
+                    sf::Vector2i mousePosition = sf::Mouse::getPosition(window);
+                    int mouseX = mousePosition.x; 
+                    int mouseY = mousePosition.y;
                 }
             }
         }
 
         
-        updateGrid();
+        if (!pause)updateGrid();
         renderGrid(window);
         sf::sleep(sf::milliseconds(speed));
     }

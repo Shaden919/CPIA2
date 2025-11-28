@@ -11,7 +11,6 @@ TERNARY
 
 #endif
 
-
 // Client.hpp
 #ifndef CLIENT_HPP
 #define CLIENT_HPP

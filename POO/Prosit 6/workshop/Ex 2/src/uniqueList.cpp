@@ -35,5 +35,5 @@ void UniqueList::print() const {
     {
        std::cout << list[i] << ",";
     }
-    std::cout << list[list.size() - 1] << std::endl;
+    std::cout << list[list.size() - 1] << "]\n";
 }
